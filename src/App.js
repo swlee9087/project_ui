@@ -46,39 +46,9 @@ const App = () => (
 <NavForJavaScript/> */}
 <HomePage/>
 <Switch>
-
-{/* <Route exact path='/' component ={Home}/>
-<Redirect from='/home' to={'/'}/>
-<Route exact path='/join' component ={Join}/>
-<Route exact path='/login' component ={Login}/>
-<Route exact path='/schoolstatus' component ={SchoolStatus}/>
-<Route exact path='/register' component ={CourseRegister}/>
-<Route exact path='/profile' component ={OnlineProfile}/> */}
-
-{/* <Route exact path='/basic' component={Basic}/>
-<Route exact path='/arrowfn' component={ArrowFn}/>
-<Route exact path='/arguments' component={Arguments}/>
-<Route exact path='/templit' component={TemplateLiteral}/>
-<Route exact path='/litmethod' component={LiteralMethod}/>
-<Route exact path='/destruct' component={Destructuring}/>
-<Route exact path='/loop' component={Loop}/>
-<Route exact path='/arrmethod' component={ArrayMethod}/>
-<Route exact path='/spopretparam' component={SpreadOpRestParam}/>
-<Route exact path='/objlit' component={ObjLiteral}/>
-<Route exact path='/symbol' component={Symbol}/>
-<Route exact path='/class' component={Class}/>
-<Route exact path='/promise' component={Promise}/>
-<Route exact path='/generator' component={Generator}/>
-<Route exact path='/proxy' component={Proxy}/>
-<Route exact path='/setmap' component={SetMap}/>
-<Route exact path='/array' component={Array}/>
-<Route exact path='/es2017' component={Es2017}/>
-<Route exact path='/asyncawait' component={AsyncAwait}/>
-<Route exact path='/es2018' component={Es2018}/>
-<Route exact path='/es2019' component={Es2019}/>
-<Route exact path='/es2020' component={Es2020}/>
-<Route exact path='/typescript' component={TypeScript}/> */}
-
+<Route exact path='/HomePage' component={HomePage}/>
+<Route exact path='/HomePage' component={HomePage}/>
+<Route exact path='/HomePage' component={HomePage}/>
 <Route exact path='/HomePage' component={HomePage}/>
 
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from './Nav'
 
-const Login = () => (<div><Nav/>
+const Login = () => (<div>
     <h1>로그인</h1>
 <form>
         <ul>
