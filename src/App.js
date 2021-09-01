@@ -1,18 +1,21 @@
 import React from 'react';
 import {Redirect, Route, Switch} from 'react-router-dom'
 
-// import CourseRegister from './components/CourseRegister'
-// import OnlineProfile from "./components/OnlineProfile"
-// import Join from "./components/Join"
-// import Login from "./components/Login"
-// import SchoolStatus from './components/SchoolStatus';
-// import Home from './components/Home'
-// import Nav from './components/Nav';
+// import {CourseRegister,OnlineProfile,Join,
+//     Login,SchoolStatus,Home,Nav,NavForJavaScript} from 'components'
+// // import CourseRegister from './components/CourseRegister'
+// // import OnlineProfile from "./components/OnlineProfile"
+// // import Join from "./components/Join"
+// // import Login from "./components/Login"
+// // import SchoolStatus from './components/SchoolStatus';
+// // import Home from './components/Home'
+// // import Nav from './components/Nav';
+// // import NavForJavaScript from './components/NavForJavaScript'
 
-// import styled from "styled-components";
-// import Header from "./Header";
+// // import styled from "styled-components";
+// // import Header from "./Header";
 
-// import NavForJavaScript from './components/NavForJavaScript'
+
 // import Basic from './modern-javascript/01-basic/Basic'
 // import ArrowFn from './modern-javascript/02-arrow-fn/ArrowFn'
 // import Arguments from './modern-javascript/03-arguments/Arguments'
@@ -36,33 +39,29 @@ import {Redirect, Route, Switch} from 'react-router-dom'
 // import Es2019 from './modern-javascript/21-es2019/Es2019'
 // import Es2020 from './modern-javascript/22-es2020/Es2020'
 // import TypeScript from './modern-javascript/23-typescript/Typescript'
-import HomePage from './pages/HomePage';
 
-
+// import {HomePage,Board,Item,User} from './pages';
 
 const App = () => (
 <>
-{/* <Layout/><Header/>
-<NavForJavaScript/> */}
-<HomePage/>
+{/* <Layout/><Header/>*/}
+{/* <NavForJavaScript/> */}
+{/* <HomePage>
 <Switch>
 <Route exact path='/HomePage' component={HomePage}/>
-<Route exact path='/HomePage' component={HomePage}/>
-<Route exact path='/HomePage' component={HomePage}/>
-<Route exact path='/HomePage' component={HomePage}/>
+<Route exact path='/Board' component={Board}/>
+<Route exact path='/Item' component={Item}/>
+<Route exact path='/User' component={User}/>
+<Route exact path='/Basic' component={Basic}/>
+<Route exact path='/ArrowFn' component={ArrowFn}/>
 
 
 
-</Switch></>
+</Switch>
+</HomePage> */}
+</>
 )
 
-// const Layout =styled.div`
-// margin: 0 auto;
-// padding-left: 100px;
-// display: flex;
-// width:100%;
-// flex-flow:row wrap;
-// `
 
 
 export default App

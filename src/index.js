@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+// import './index.css';
+// import App from './App';
 import {BrowserRouter} from 'react-router-dom'
-
 import reportWebVitals from './reportWebVitals';
+// import DateMonth from 'components/DateMonth'
+// import MedPoint from 'cofin/MedPoint'
+// import News from 'news/pages/News'
+// import Tags from 'cofin/Tags'
+import MedPoint from 'medPoint/pages/MedPoint'
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter><App /></BrowserRouter>  
+    <BrowserRouter>
+    <MedPoint />
+    </BrowserRouter>  
   </React.StrictMode>,
   document.getElementById('root')
 );
