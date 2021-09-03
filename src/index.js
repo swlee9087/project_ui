@@ -8,13 +8,14 @@ import reportWebVitals from './reportWebVitals';
 // import MedPoint from 'cofin/MedPoint'
 // import News from 'news/pages/News'
 // import Tags from 'cofin/Tags'
-import MedPoint from 'medPoint/pages/MedPoint'
-
+// import MedPoint from 'medPoint/pages/MedPoint'
+import Login from 'user/pages/Login'
+// import UserLost from 'user/components/UserLost'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <MedPoint />
+    <Login />
     </BrowserRouter>  
   </React.StrictMode>,
   document.getElementById('root')

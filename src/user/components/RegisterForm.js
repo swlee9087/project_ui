@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RegisterDirect = () => {
+const RegisterForm = () => {
     return(
     <div>
     <h1>직접 입력</h1>
@@ -49,4 +49,4 @@ const RegisterDirect = () => {
         </form>
     </div>
     )}
-export default RegisterDirect
+export default RegisterForm
