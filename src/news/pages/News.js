@@ -1,55 +1,56 @@
 import React from 'react';
-import styled from 'styled-components'
-// import TagCloud from 'react-tagcloud';
-// import Tags from 'cofin/Tags'
-import TagCloud from 'react-tag-cloud';
-import randomColor from 'randomcolor';
+// import styled from 'styled-components'
+// import TagCloud from 'react-tag-cloud';
+// import randomColor from 'randomcolor';
 
+import NewsBody from 'news/components/NewsBody';
+import NewsDate from 'news/components/NewsDate';
+import NewsSearch from 'news/components/NewsSearch';
+import NewsType from 'news/components/NewsType';
+import NewsTags from 'news/components/NewsTags'
 
+// const SearchBox =()=> (
+//     <from action="search.php" method="post">
+//         <input type="text" title="Search"></input>
+//         <input type="submit" value="검색"></input>
+//     </from>)
 
+// const NewsType=()=>(
+//     <ul>
+//         <li>"전체 뉴스"</li>
+//         <li>"국내 뉴스"</li>
+//         <li>"세계 뉴스"</li>
+//         <li>"백신 특보"</li>
+//     </ul>
+//     // not list but folder link? 
+// )
 
-const SearchBox =()=> (
-    <from action="search.php" method="post">
-        <input type="text" title="Search"></input>
-        <input type="submit" value="검색"></input>
-    </from>)
+// const DatePeriod = () => (
+// <div style={{width:"80%"}}>
+//         <form>
+//             <h3>기간 검색</h3>
+//             <label><input type="date" id="start"/></label>
+//             <label><input type="date" id="end"/></label>
+//             <label><input type="button" id="Search" value="Search"/></label>
+//         </form>    
+//     </div>
+// )
 
-const NewsType=()=>(
-    <ul>
-        <li>"전체 뉴스"</li>
-        <li>"국내 뉴스"</li>
-        <li>"세계 뉴스"</li>
-        <li>"백신 특보"</li>
-    </ul>
-    // not list but folder link? 
-)
-
-const DatePeriod = () => (
-<div style={{width:"80%"}}>
-        <form>
-            <h3>기간 검색</h3>
-            <label><input type="date" id="start"/></label>
-            <label><input type="date" id="end"/></label>
-            <label><input type="button" id="Search" value="Search"/></label>
-        </form>    
-    </div>
-)
-
-const Tags = () => (
-    <TagCloud style={{
-        fontFamily:'sans-serif', 
-        fontSize:30,
-        fontWeight:'bold', 
-        fontStyle:'italic', color:()=>randomColor(),
-        padidng:5,
-        width:'100%',
-        height:'100%',
-    }}>
-        <div style={{fontSize:50}}>Seoul</div>
-        <div style={{color:'green'}}>Tag</div>
-        <div rotate={90}>cloud</div>
-    </TagCloud>
-    )
+// const Tags = () => (
+//     <TagCloud style={{
+//         fontFamily:'sans-serif', 
+//         fontSize:30,
+//         fontWeight:'bold', 
+//         fontStyle:'italic', color:()=>randomColor(),
+//         padidng:5,
+//         width:'100%',
+//         height:'100%',
+//     }}>
+//         <div style={{fontSize:50}}>Seoul</div>
+//         <div style={{color:'green'}}>Tag</div>
+//         <div rotate={90}>cloud</div>
+//     </TagCloud>
+//     )
 
 const News = () => {
     return (<>
@@ -57,12 +58,12 @@ const News = () => {
     <table style={{width:"1200px", height:"800px", margin:"0 auto", alignItems:'center center'}}>
             <tr style={{width:"100%", height:"15%"}}>
                 <td style={{width:"30%"}}>
-                <tr><SearchBox /></tr>
-                <tr><NewsType /></tr>
-                <tr><DatePeriod /></tr>
-                <tr><Tags /></tr>
+                    <tr><NewsSearch /></tr>
+                    <tr><NewsType /></tr>
+                    <tr><NewsDate /></tr>
+                    <tr><NewsTags /></tr>
                 </td>
-                <td>LOOP pages HERE</td>
+                <td><NewsBody/></td>
             </tr>
             
         </table>

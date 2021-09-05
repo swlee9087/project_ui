@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-const NewsBody =()=>(
+const MessageBody =()=>(
     <div>
         <fieldset>
             <form>
-                <legend>news body here</legend>
+                <legend>msg body here</legend>
             </form>
         </fieldset>
     </div>
 )
-export default NewsBody;
+export default MessageBody;

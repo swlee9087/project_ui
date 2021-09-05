@@ -4,18 +4,33 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 import {BrowserRouter} from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
-// import DateMonth from 'components/DateMonth'
-// import MedPoint from 'cofin/MedPoint'
+
 // import News from 'news/pages/News'
-// import Tags from 'cofin/Tags'
-// import MedPoint from 'medPoint/pages/MedPoint'
-import Login from 'user/pages/Login'
+// import NewsSearch from 'news/components/NewsSearch'
+// import NewsDate from 'news/components/NewsDate'
+// import NewsType from 'news/components/NewsType'
+// import NewsTags from 'news/components/NewsTags'
+
+// import MessagePage from 'message/pages/MessagePage'
+// import MessageSearch from 'message/components/MessageSearch'
+// import MessageDate from 'message/components/MessageDate'
+// import MessageType from 'message/components/MessageType'
+
+import MedPoint from 'medPoint/pages/MedPoint'
+
+// import Login from 'user/pages/Login'
 // import UserLost from 'user/components/UserLost'
+// import Unregister from 'user/components/Unregister'
+// import RegisterForm from 'user/components/RegisterForm'
+// import AppAlert from 'user/components/AppAlert'
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Login />
+    <MedPoint />
     </BrowserRouter>  
   </React.StrictMode>,
   document.getElementById('root')

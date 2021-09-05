@@ -4,7 +4,7 @@ import Unregister from './Unregister'
 const UserInfo = () => (
 <div>
     <h1>개인 정보</h1>
-<form onSubmit={this.formSubmit}>
+<form onSubmit={this.formSubmit}  action="">
         <ul>
             <li>
                 <label>
@@ -29,8 +29,12 @@ const UserInfo = () => (
                 </label></li>
                 <li>            
                 <label>
-                    Sex: 
+                    성별: 
                     <input type="radio" value="Male" checked={this.state.selectedOption ==="Male"} onChange={this.onValueChange}/>Male
+                    {/* 성별 : 
+                        <input type="radio" name="sex" value="male" /> 남성
+                        <input type="radio" name="sex" value="female" /> 여성
+                        <input type="radio" name="sex" value="other" /> 기타 */}
                 </label></li>
                 <li>            
                 <label>
@@ -46,9 +50,14 @@ const UserInfo = () => (
                 </label></li>
                 <input type="submit" value="변경완료" />
                 <input type="exit" value="취소" />
-                <input type="submit" value="탈퇴" linkto={Unregister}/>
+                
         </ul>
     </form>
+    <button onclick="OpenUnregister();">탈퇴 하기</button><br/><br/>
 </div>
 )
 export default UserInfo
+
+const OpenUnregister=()=>{
+    return(window.open(Unregister))
+}
