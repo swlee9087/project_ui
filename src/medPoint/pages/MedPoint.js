@@ -2,6 +2,8 @@ import React from 'react'
 // import styled from "styled-components"
 // import {useTable, useSortBy} from "react-table"
 // import InfiniteScroll from "react-infinite-scroll-component"
+// import MedPoint20210905 from 'med/components/MedPoint20210905'
+import AddressList from 'medPoint/components/AddressList'
 
 const MedPoint = () => {
     
@@ -9,15 +11,22 @@ const MedPoint = () => {
     <div>
     <text align="center"><h1>지역별 선별 신료소 정보</h1></text>
     <table style={style}>
-    <tr>
-        <td style={{width:"15%", border:"1px solid black"}}>지역명 - 대</td>
-        <td style={{width:"15%", border:"1px solid black"}}>지역명 - 동읍면</td>
+    <tr style={{height: "20px"}}>현재 위치: </tr>
+    <tr style={{height: "20px"}}>
+        <td style={{width:"5%", border:"1px solid black"}}>시도</td>
+        <td style={{width:"10%", border:"1px solid black"}}>기관명</td>
         <td style={{width:"20%", border:"1px solid black"}}>상세 주소</td>
         <td style={{width:"10%", border:"1px solid black"}}>전화 번호</td>
-        <td style={{width:"10%", border:"1px solid black"}}>진료 시간</td>
-        <td style={{width:"10%", border:"1px solid black"}}>주차가능 여부 - tick</td>
+        <td style={{width:"10%", border:"1px solid black"}}>운영 시간</td>
+        <td style={{width:"10%", border:"1px solid black"}}>관할보건소</td>
         
     </tr>
+    <tr>
+        <td colspan="6" style={{border:"1px solid black"}}>선별 진료소 리스트 - 사용자 위치에 가까운 거리순으로 나열<AddressList/></td>
+    </tr>
+    {/* <tr>
+        <td></td>
+    </tr> */}
     </table>
 </div>
 )}
